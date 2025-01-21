@@ -5,7 +5,6 @@ function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [dynamicPassword, setDynamicPassword] = useState('');
-    const [uniqueValue, setUniqueValue] = useState('');
     const [fixedValue, setFixedValue] = useState('');
     const [keyValue, setKeyValue] = useState('');
     const [trigFunction, setTrigFunction] = useState('sin');
@@ -38,7 +37,7 @@ function Login() {
                 trigResult = Math.sin(angle);
         }
     
-        const calculatedPassword = (digitSum * Math.sin(parseFloat(fixedValue)) * parseFloat(uniqueValue) * trigResult).toFixed(3);
+        const calculatedPassword = (digitSum * Math.sin(parseFloat(fixedValue)) * trigResult).toFixed(3);
         console.log(calculatedPassword)
         console.log(calculatedPassword)
 
@@ -63,7 +62,8 @@ function Login() {
                 password,
                 dynamicPassword: dynamicPassword, 
                 keyValue,
-            
+            fixedValue,
+            trigFunction
             });
 
             alert('Login successful!');
@@ -127,14 +127,6 @@ function Login() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Password"
-                    style={styles.input}
-                    required
-                />
-                <input
-                    type="number"
-                    value={uniqueValue}
-                    onChange={(e) => setUniqueValue(e.target.value)}
-                    placeholder="Unique Value"
                     style={styles.input}
                     required
                 />

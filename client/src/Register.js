@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
-import axios from './api'; // Ensure this points to your Axios instance
+import axios from './api'; 
 
 function Register() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [uniqueValue, setUniqueValue] = useState('');
     const [fixedValue, setFixedValue] = useState('');
     const [trigFunction, setTrigFunction] = useState('sin');
     const [keyValue1, setKeyValue1] = useState('');
-    const [loading, setLoading] = useState(false); // Loading state
+    const [loading, setLoading] = useState(false); 
 
     const handleRegister = async (e) => {
         e.preventDefault();
-        setLoading(true); // Set loading to true
+        setLoading(true);
 
         try {
             const response = await axios.post('/auth/register', {
                 username,
                 password,
-                uniqueValue: parseFloat(uniqueValue),
                 fixedValue: parseFloat(fixedValue),
                 trigFunction,
                 keyValue1: parseFloat(keyValue1),
@@ -27,7 +25,6 @@ function Register() {
             // Reset the form fields
             setUsername('');
             setPassword('');
-            setUniqueValue('');
             setFixedValue('');
             setTrigFunction('sin');
             setKeyValue1('');
@@ -39,7 +36,7 @@ function Register() {
         }
     };
 
-    // Inline CSS styles
+    
     const styles = {
         container: {
             display: 'flex',
@@ -76,8 +73,9 @@ function Register() {
             backgroundColor: '#218838',
         },
         loadingButton: {
-            backgroundColor: '#6c757d', // Gray color for loading state
+            backgroundColor: '#6c757d',
             cursor: 'not-allowed',
+            
         },
     };
 
@@ -100,14 +98,7 @@ function Register() {
                     style={styles.input}
                     required
                 />
-                <input
-                    type="number"
-                    value={uniqueValue}
-                    onChange={(e) => setUniqueValue(e.target.value)}
-                    placeholder="Unique Value"
-                    style={styles.input}
-                    required
-                />
+               
                 <input
                     type="number"
                     value={fixedValue}
@@ -138,7 +129,7 @@ function Register() {
                     style={loading ? { ...styles.button, ...styles.loadingButton } : styles.button} 
                     onMouseOver={(e) => e.currentTarget.style.backgroundColor = styles.buttonHover.backgroundColor} 
                     onMouseOut={(e) => e.currentTarget.style.backgroundColor = loading ? styles.loadingButton.backgroundColor : styles.button.backgroundColor}
-                    disabled={loading} // Disable button when loading
+                    disabled={loading} 
                 >
                     {loading ? 'Registering...' : 'Register'}
                 </button>

@@ -1,0 +1,3 @@
+Server is running...
+Server is running on port \\.\pipe\d4cc6911-ac2e-4d66-8f8b-7e28a3b92034
+MongoDB connected successfully

@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://st-us0w.onrender.com/', // Base URL should be up to the server's root
+    baseURL: 'http://192.168.43.107/server', //backend server  api call 
     headers: {
         'Content-Type': 'application/json',
     },

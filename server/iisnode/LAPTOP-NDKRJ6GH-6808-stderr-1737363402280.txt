@@ -1,0 +1,71 @@
+(node:6808) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:6808) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(node:6808) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+Mon, 20 Jan 2025 08:56:43 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at server.js:30:7
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.contentType (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:624:15)
+    at ServerResponse.send (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:137:12)
+    at C:\Users\kishore\demo\server\server.js:30:7
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\kishore\demo\server\node_modules\express\lib\router\index.js:284:15
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.contentType (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:624:15)
+    at ServerResponse.send (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:137:12)
+    at C:\Users\kishore\demo\server\server.js:30:7
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\kishore\demo\server\node_modules\express\lib\router\index.js:284:15
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.contentType (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:624:15)
+    at ServerResponse.send (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:137:12)
+    at C:\Users\kishore\demo\server\server.js:30:7
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\kishore\demo\server\node_modules\express\lib\router\index.js:284:15
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.contentType (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:624:15)
+    at ServerResponse.send (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:137:12)
+    at C:\Users\kishore\demo\server\server.js:30:7
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\kishore\demo\server\node_modules\express\lib\router\index.js:284:15
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.contentType (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:624:15)
+    at ServerResponse.send (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:137:12)
+    at C:\Users\kishore\demo\server\server.js:30:7
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\kishore\demo\server\node_modules\express\lib\router\index.js:284:15
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.contentType (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:624:15)
+    at ServerResponse.send (C:\Users\kishore\demo\server\node_modules\express\lib\response.js:137:12)
+    at C:\Users\kishore\demo\server\server.js:30:7
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\kishore\demo\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\kishore\demo\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\kishore\demo\server\node_modules\express\lib\router\index.js:284:15
